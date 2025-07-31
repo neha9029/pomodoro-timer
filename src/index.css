@@ -5,14 +5,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 .header {
   font-size: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .timer-container {
@@ -23,15 +21,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  width: clamp(200px, 40vw, 400px);
+  height: clamp(200px, 40vw, 400px);
+  font-size: clamp(2rem, 6vw, 5rem);
   border: 5px solid darkslategrey;
   border-radius: 50%;
   margin: 20px auto;
 }
 
 .buttons {
-  margin: 80px;
+  margin: 40px 0;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -45,7 +44,22 @@ body {
   color: gainsboro;
   font-size: 20px;
   font-weight: bold;
-
-  padding: 20px 50px 20px 50px;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-start:hover,
+.btn-pause:hover,
+.btn-reset:hover {
+  background-color: #2f4f4f;
+  transform: scale(1.05);
+}
+
+.btn-start:active,
+.btn-pause:active,
+.btn-reset:active {
+  transform: scale(0.98);
 }
