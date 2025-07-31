@@ -1,3 +1,22 @@
+Pomodoro Timer ⏳
+A simple Pomodoro Timer built with React and styled using Flexbox.
+Start, pause, and reset your timer easily to stay productive!
+
+🔗 Live Demo - https://neha9029.github.io/pomodoro-timer/
+
+Features
+⏱️ 25-minute countdown timer
+
+▶️ Start, ⏸️ Pause, and 🔄 Reset controls
+
+Circular timer display
+
+Responsive and clean UI
+
+Screenshot
+
+![Pomodoro Timer Screenshot](./public/screenshot.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
